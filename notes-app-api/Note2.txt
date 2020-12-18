@@ -1,0 +1,35 @@
+Service Information
+service: notes-app-2-api
+stage: dev
+region: ap-southeast-1
+stack: notes-app-2-api-dev
+resources: 43
+api keys:
+  None
+endpoints:
+  POST - https://u62qrcsi3h.execute-api.ap-southeast-1.amazonaws.com/dev/notes
+  GET - https://u62qrcsi3h.execute-api.ap-southeast-1.amazonaws.com/dev/notes/{id}
+  GET - https://u62qrcsi3h.execute-api.ap-southeast-1.amazonaws.com/dev/notes
+  PUT - https://u62qrcsi3h.execute-api.ap-southeast-1.amazonaws.com/dev/notes/{id}
+  DELETE - https://u62qrcsi3h.execute-api.ap-southeast-1.amazonaws.com/dev/notes/{id}
+functions:
+  create: notes-app-2-api-dev-create
+  get: notes-app-2-api-dev-get
+  list: notes-app-2-api-dev-list
+  update: notes-app-2-api-dev-update
+  delete: notes-app-2-api-dev-delete
+layers:
+  None
+
+Stack Outputs
+AttachmentsBucketName: notes-app-2-api-dev-attachmentsbucket-13il53n0oquxw
+UserPoolClientId: 1vlpc1e260fcuoi3hl62cnajgn
+UserPoolId: ap-southeast-1_cbToCpTgR
+DeleteLambdaFunctionQualifiedArn: arn:aws:lambda:ap-southeast-1:230211339090:function:notes-app-2-api-dev-delete:1
+CreateLambdaFunctionQualifiedArn: arn:aws:lambda:ap-southeast-1:230211339090:function:notes-app-2-api-dev-create:1
+GetLambdaFunctionQualifiedArn: arn:aws:lambda:ap-southeast-1:230211339090:function:notes-app-2-api-dev-get:1
+UpdateLambdaFunctionQualifiedArn: arn:aws:lambda:ap-southeast-1:230211339090:function:notes-app-2-api-dev-update:1
+IdentityPoolId: ap-southeast-1:563fe8c2-d6b0-4bce-ac8c-2bf1e1170b99
+ListLambdaFunctionQualifiedArn: arn:aws:lambda:ap-southeast-1:230211339090:function:notes-app-2-api-dev-list:1
+ServiceEndpoint: https://u62qrcsi3h.execute-api.ap-southeast-1.amazonaws.com/dev
+ServerlessDeploymentBucketName: notes-app-2-api-dev-serverlessdeploymentbucket-b4ydbf65jchu

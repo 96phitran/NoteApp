@@ -1,0 +1,29 @@
+Serverless: Stack update finished...
+Service Information
+service: notes-app-api
+stage: prod
+region: ap-southeast-1
+stack: notes-app-api-prod
+resources: 36
+api keys:
+  None
+endpoints:
+  POST - https://cve2uf1l0d.execute-api.ap-southeast-1.amazonaws.com/prod/notes
+  GET - https://cve2uf1l0d.execute-api.ap-southeast-1.amazonaws.com/prod/notes/{id}
+  GET - https://cve2uf1l0d.execute-api.ap-southeast-1.amazonaws.com/prod/notes
+  PUT - https://cve2uf1l0d.execute-api.ap-southeast-1.amazonaws.com/prod/notes/{id}
+  DELETE - https://cve2uf1l0d.execute-api.ap-southeast-1.amazonaws.com/prod/notes/{id}
+functions:
+  create: notes-app-api-prod-create
+  get: notes-app-api-prod-get
+  list: notes-app-api-prod-list
+  update: notes-app-api-prod-update
+  delete: notes-app-api-prod-delete
+layers:
+  None
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
+
+Cognito Pool ID: ap-southeast-1_0pMncIfpb
+App client name: notes-app
+App client ID: 2pfo0o1ar24vacr5vtv5cg2q7e
+Identity Pool ID: ap-southeast-1:ab645fba-a276-4275-be69-c644219888b0
